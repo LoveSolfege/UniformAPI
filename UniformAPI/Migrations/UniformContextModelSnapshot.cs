@@ -52,7 +52,7 @@ namespace UniformAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Department")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -64,17 +64,17 @@ namespace UniformAPI.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Shirt"
+                            Department = "A"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Pants"
+                            Department = "B"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Jacket"
+                            Department = "C"
                         });
                 });
 
@@ -84,7 +84,7 @@ namespace UniformAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -96,17 +96,17 @@ namespace UniformAPI.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Available"
+                            Status = "Available"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "In Use"
+                            Status = "In Use"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Maintenance"
+                            Status = "Maintenance"
                         });
                 });
 
@@ -116,7 +116,7 @@ namespace UniformAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -128,22 +128,22 @@ namespace UniformAPI.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Dress"
+                            Type = "Dress"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Pants"
+                            Type = "Pants"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Shirt"
+                            Type = "Shirt"
                         },
                         new
                         {
                             Id = 4,
-                            Name = "Waist"
+                            Type = "Waist"
                         });
                 });
 

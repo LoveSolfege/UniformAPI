@@ -29,22 +29,22 @@ public class UniformContext(DbContextOptions<UniformContext> options) : DbContex
 		
 		
 		modelBuilder.Entity<UniformStatus>().HasData(
-			new UniformStatus { Id = 1, Name = "Available" },
-			new UniformStatus { Id = 2, Name = "In Use" },
-			new UniformStatus { Id = 3, Name = "Maintenance" }
+			new UniformStatus { Id = 1, Status = "Available" },
+			new UniformStatus { Id = 2, Status = "In Use" },
+			new UniformStatus { Id = 3, Status = "Maintenance" }
 		);
 
 		modelBuilder.Entity<UniformType>().HasData(
-			new UniformType { Id = 1, Name = "Dress" },
-			new UniformType { Id = 2, Name = "Pants" },
-			new UniformType { Id = 3, Name = "Shirt" },
-			new UniformType { Id = 4, Name = "Waist" }
+			new UniformType { Id = 1, Type = "Dress" },
+			new UniformType { Id = 2, Type = "Pants" },
+			new UniformType { Id = 3, Type = "Shirt" },
+			new UniformType { Id = 4, Type = "Waist" }
 		);
 		
 		modelBuilder.Entity<UniformDepartment>().HasData(
-			new UniformType { Id = 1, Name = "Shirt" },
-			new UniformType { Id = 2, Name = "Pants" },
-			new UniformType { Id = 3, Name = "Jacket" }
+			new UniformDepartment { Id = 1, Department = "A" },
+			new UniformDepartment { Id = 2, Department = "B" },
+			new UniformDepartment { Id = 3, Department = "C" }
 		);
 	}
 
